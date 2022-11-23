@@ -250,8 +250,16 @@ class _OrderScreenState extends State<OrderScreen> {
           alignment: Alignment.center,
           height: 70,
           width: double.infinity,
-          decoration:
-              const BoxDecoration(color: Color.fromARGB(0, 244, 67, 54)),
+          decoration: const BoxDecoration(
+              color: Color.fromARGB(0, 244, 67, 54),
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+              boxShadow: [
+                BoxShadow(
+                  color: Color.fromARGB(122, 202, 196, 196),
+                  blurRadius: 16,
+                  spreadRadius: 30,
+                )
+              ]),
           child: Stack(
             children: [
               Container(
